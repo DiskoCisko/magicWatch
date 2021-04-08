@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    height: calc(100vh/3);
+    color: #FFF;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.sec, .min, .hour {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    transition: 2s;
+    z-index: 1;
+} 
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid rgb(1, 149, 242);
+    top: 50vh;
+    left: 50vw;
+    transform: translate(calc(-50% - 20px), calc(-50% - 20px));
+    z-index: 0;
+}
